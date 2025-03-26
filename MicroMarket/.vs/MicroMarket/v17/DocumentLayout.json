@@ -1,53 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Clases\\MicroMarket\\MicroMarket\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\controllers\\vendedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\controllers\\vendedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\vendedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\migrations\\20250326210631_segundamigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\migrations\\20250326210631_segundamigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\migrations\\20250326011614_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\migrations\\20250326011614_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\contexto\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\migrations\\20250326011614_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\migrations\\20250326011614_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\contexto\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\contexto\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\hp\\desktop\\proyecto de dise\u00F1o\\codigo\\micromarket\\micromarket\\micromarket\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -64,150 +68,170 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "VentasController.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Controllers\\VentasController.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
               "RelativeToolTip": "MicroMarket\\Controllers\\VentasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:20:23.377Z",
+              "WhenOpened": "2025-03-26T21:11:51.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "VendedorsController.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VendedorsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VendedorsController.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Controllers\\VendedorsController.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VendedorsController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VendedorsController.cs",
               "RelativeToolTip": "MicroMarket\\Controllers\\VendedorsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:19:45.731Z",
+              "WhenOpened": "2025-03-26T21:10:39.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductoesController.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ProductoesController.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Controllers\\ProductoesController.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ProductoesController.cs",
-              "RelativeToolTip": "MicroMarket\\Controllers\\ProductoesController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "MicroMarket\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:18:58.741Z",
+              "WhenOpened": "2025-03-26T21:09:28.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ClientesController.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Controllers\\ClientesController.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\ClientesController.cs",
               "RelativeToolTip": "MicroMarket\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:18:07.557Z",
+              "WhenOpened": "2025-03-26T21:08:07.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250326210631_SegundaMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326210631_SegundaMigracion.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Migrations\\20250326210631_SegundaMigracion.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326210631_SegundaMigracion.cs",
+              "RelativeToolTip": "MicroMarket\\Migrations\\20250326210631_SegundaMigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T21:06:31.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250326011614_PrimeraMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
+              "RelativeToolTip": "MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T01:16:14.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "20250326011614_PrimeraMigracion.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
-              "RelativeToolTip": "MicroMarket\\Migrations\\20250326011614_PrimeraMigracion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T01:16:14.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Program.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
               "RelativeToolTip": "MicroMarket\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T01:01:31.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyContext.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Contexto\\MyContext.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Contexto\\MyContext.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Contexto\\MyContext.cs",
-              "RelativeToolTip": "MicroMarket\\Contexto\\MyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T01:03:17.861Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\appsettings.json",
               "RelativeDocumentMoniker": "MicroMarket\\appsettings.json",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\appsettings.json",
               "RelativeToolTip": "MicroMarket\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T01:00:09.712Z"
+              "WhenOpened": "2025-03-26T01:00:09.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Models\\Producto.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Producto.cs",
-              "RelativeToolTip": "MicroMarket\\Models\\Producto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAewBgAAAAtAAAAAAAAAA==",
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Contexto\\MyContext.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Contexto\\MyContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Contexto\\MyContext.cs",
+              "RelativeToolTip": "MicroMarket\\Contexto\\MyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T00:56:10.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Venta.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Venta.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Models\\Venta.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Venta.cs",
-              "RelativeToolTip": "MicroMarket\\Models\\Venta.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T00:54:36.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Vendedor.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Models\\Vendedor.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
-              "RelativeToolTip": "MicroMarket\\Models\\Vendedor.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T00:53:06.02Z"
+              "WhenOpened": "2025-03-26T01:03:17.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Producto.cs",
+              "RelativeToolTip": "MicroMarket\\Models\\Producto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA2wBgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T00:56:10.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Venta.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Models\\Venta.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Venta.cs",
+              "RelativeToolTip": "MicroMarket\\Models\\Venta.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T00:54:36.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vendedor.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Models\\Vendedor.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
+              "RelativeToolTip": "MicroMarket\\Models\\Vendedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T00:53:06.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Models\\Cliente.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Proyecto de Dise\u00F1o\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Cliente.cs",
               "RelativeToolTip": "MicroMarket\\Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T00:50:04.474Z"
+              "WhenOpened": "2025-03-26T00:50:04.474Z",
+              "EditorCaption": ""
             }
           ]
         }

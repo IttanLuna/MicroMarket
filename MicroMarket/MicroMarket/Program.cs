@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 // Add connection string
 builder.Services.AddDbContext<MyContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaConexion"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("CadenaConexion"));
 });
 
 var app = builder.Build();
