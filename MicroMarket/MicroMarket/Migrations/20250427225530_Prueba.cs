@@ -1,4 +1,4 @@
-﻿//using System;
+﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MicroMarket.Migrations
 {
     /// <inheritdoc />
-    public partial class PrimeraMigracion : Migration
+    public partial class Prueba : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,13 +15,13 @@ namespace MicroMarket.Migrations
                 name: "Clientes",
                 columns: table => new
                 {
-                    ClienteId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CI = table.Column<int>(type: "int", nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    CI = table.Column<int>(type: "INTEGER", nullable: false),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: false),
+                    Telefono = table.Column<string>(type: "TEXT", nullable: false),
+                    Direccion = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -32,12 +32,12 @@ namespace MicroMarket.Migrations
                 name: "Productos",
                 columns: table => new
                 {
-                    ProductoId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Precio = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Stock = table.Column<int>(type: "int", nullable: false),
-                    UrlFoto = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    ProductoId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Precio = table.Column<decimal>(type: "TEXT", precision: 10, scale: 2, nullable: false),
+                    Descripcion = table.Column<string>(type: "TEXT", nullable: true),
+                    Stock = table.Column<int>(type: "INTEGER", nullable: false),
+                    UrlFoto = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -48,13 +48,13 @@ namespace MicroMarket.Migrations
                 name: "Vendedores",
                 columns: table => new
                 {
-                    VendedorId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    VendedorId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: false),
+                    Contraseña = table.Column<string>(type: "TEXT", nullable: false),
+                    Telefono = table.Column<string>(type: "TEXT", nullable: false),
+                    Direccion = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,20 +65,20 @@ namespace MicroMarket.Migrations
                 name: "Ventas",
                 columns: table => new
                 {
-                    VentaId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NroVenta = table.Column<int>(type: "int", nullable: false),
+                    VentaId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    NroVenta = table.Column<int>(type: "INTEGER", nullable: false),
                     FechaVenta = table.Column<DateOnly>(type: "date", nullable: false),
-                    Mes = table.Column<int>(type: "int", nullable: false),
-                    Anio = table.Column<int>(type: "int", nullable: false),
-                    Detalle = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Cantidad = table.Column<int>(type: "int", nullable: false),
-                    PrecioUnidad = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
-                    Total = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
-                    ClienteId = table.Column<int>(type: "int", nullable: false),
-                    TelevisorId = table.Column<int>(type: "int", nullable: false),
-                    ProductoId = table.Column<int>(type: "int", nullable: true),
-                    VendedorId = table.Column<int>(type: "int", nullable: true)
+                    Mes = table.Column<int>(type: "INTEGER", nullable: false),
+                    Anio = table.Column<int>(type: "INTEGER", nullable: false),
+                    Detalle = table.Column<string>(type: "TEXT", nullable: false),
+                    Cantidad = table.Column<int>(type: "INTEGER", nullable: false),
+                    PrecioUnidad = table.Column<decimal>(type: "TEXT", precision: 10, scale: 2, nullable: false),
+                    Total = table.Column<decimal>(type: "TEXT", precision: 10, scale: 2, nullable: false),
+                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TelevisorId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ProductoId = table.Column<int>(type: "INTEGER", nullable: true),
+                    VendedorId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
