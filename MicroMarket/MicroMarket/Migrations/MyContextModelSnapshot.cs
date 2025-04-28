@@ -59,6 +59,9 @@ namespace MicroMarket.Migrations
                         .HasPrecision(10, 2)
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("ProveedorId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("Stock")
                         .HasColumnType("INTEGER");
 
@@ -67,7 +70,38 @@ namespace MicroMarket.Migrations
 
                     b.HasKey("ProductoId");
 
+                    b.HasIndex("ProveedorId");
+
                     b.ToTable("Productos");
+                });
+
+            modelBuilder.Entity("MicroMarket.Models.Proveedor", b =>
+                {
+                    b.Property<int>("ProveedorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CI")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ProveedorId");
+
+                    b.ToTable("Proveedor");
                 });
 
             modelBuilder.Entity("MicroMarket.Models.Vendedor", b =>
@@ -156,6 +190,13 @@ namespace MicroMarket.Migrations
                     b.ToTable("Ventas");
                 });
 
+            modelBuilder.Entity("MicroMarket.Models.Producto", b =>
+                {
+                    b.HasOne("MicroMarket.Models.Proveedor", null)
+                        .WithMany("Productos")
+                        .HasForeignKey("ProveedorId");
+                });
+
             modelBuilder.Entity("MicroMarket.Models.Venta", b =>
                 {
                     b.HasOne("MicroMarket.Models.Cliente", "Cliente")
@@ -185,6 +226,11 @@ namespace MicroMarket.Migrations
             modelBuilder.Entity("MicroMarket.Models.Producto", b =>
                 {
                     b.Navigation("Ventas");
+                });
+
+            modelBuilder.Entity("MicroMarket.Models.Proveedor", b =>
+                {
+                    b.Navigation("Productos");
                 });
 
             modelBuilder.Entity("MicroMarket.Models.Vendedor", b =>
