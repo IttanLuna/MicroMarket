@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\usuario\\desktop\\micromarket\\micromarket\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\usuario\\desktop\\micromarket\\micromarket\\migrations\\20250428230819_aumento_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\migrations\\20250428230819_aumento_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\usuario\\desktop\\micromarket\\micromarket\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|c:\\users\\usuario\\desktop\\micromarket\\micromarket\\controllers\\proveedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\proveedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250428230819_aumento_proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Migrations\\20250428230819_aumento_proveedor.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Migrations\\20250428230819_aumento_proveedor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Migrations\\20250428230819_aumento_proveedor.cs",
+              "RelativeToolTip": "MicroMarket\\Migrations\\20250428230819_aumento_proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:08:19.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MicroMarket\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MicroMarket\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T23:05:05.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProveedorsController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Controllers\\ProveedorsController.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Controllers\\ProveedorsController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Controllers\\ProveedorsController.cs",
+              "RelativeToolTip": "MicroMarket\\Controllers\\ProveedorsController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:03:10.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Models\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\Models\\Proveedor.cs",
+              "RelativeToolTip": "MicroMarket\\Models\\Proveedor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:00:03.138Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
