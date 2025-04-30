@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O01BgmHhKZ0=",
+  "dgSpecHash": "p3hmASQELbA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+  "projectFilePath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

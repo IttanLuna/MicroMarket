@@ -6674,11 +6674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+      "projectUniqueName": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
       "projectName": "MicroMarket",
-      "projectPath": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+      "projectPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Desktop\\MicroMarket\\MicroMarket\\obj\\",
+      "outputPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
