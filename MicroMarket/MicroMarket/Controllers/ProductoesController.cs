@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MicroMarket.Contexto;
 using MicroMarket.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace MicroMarket.Controllers
 {
     public class ProductoesController : Controller
     {
         private readonly MyContext _context;
+        IWebHostEnvironment _webHostEnvironment;
 
-        public ProductoesController(MyContext context)
+        public ProductoesController(MyContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Productoes
@@ -54,12 +57,18 @@ namespace MicroMarket.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto")] Producto producto)
+        public async Task<IActionResult> Create([Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto,FotoFile")] Producto producto)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(producto);
                 await _context.SaveChangesAsync();
+                if (producto.FotoFile != null)
+                {
+                    await GuardarImagen(producto);
+                    _context.Update(producto);
+                    await _context.SaveChangesAsync();
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(producto);
@@ -86,7 +95,7 @@ namespace MicroMarket.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto")] Producto producto)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto,FotoFile")] Producto producto)
         {
             if (id != producto.ProductoId)
             {
@@ -97,6 +106,10 @@ namespace MicroMarket.Controllers
             {
                 try
                 {
+                    if (producto.FotoFile != null)
+                    {
+                        await GuardarImagen(producto);
+                    }
                     _context.Update(producto);
                     await _context.SaveChangesAsync();
                 }
@@ -115,6 +128,24 @@ namespace MicroMarket.Controllers
             }
             return View(producto);
         }
+
+        private async Task GuardarImagen(Producto producto)
+        {
+            var wwwRootPath = _webHostEnvironment.WebRootPath;
+            var extension = Path.GetExtension(producto.FotoFile!.FileName);
+            var nameFoto = $"{producto.ProductoId}{extension}";
+            producto.UrlFoto = nameFoto;
+
+            // Asegura que la carpeta exista
+            var uploads = Path.Combine(wwwRootPath, "fotos");
+            Directory.CreateDirectory(uploads);
+
+            var filePath = Path.Combine(uploads, nameFoto);
+            // Usa using para cerrar el stream automáticamente
+            using var stream = new FileStream(filePath, FileMode.Create);
+            await producto.FotoFile.CopyToAsync(stream);
+        }
+
 
         // GET: Productoes/Delete/5
         public async Task<IActionResult> Delete(int? id)

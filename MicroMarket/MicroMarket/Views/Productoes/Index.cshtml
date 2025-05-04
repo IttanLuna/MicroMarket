@@ -12,15 +12,17 @@
 <table class="table">
     <thead>
         <tr>
+            <th>Imagen</th>
             <th>
                 @Html.DisplayNameFor(model => model.Precio)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Stock)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -28,14 +30,21 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Precio)
+                @if (item.UrlFoto != null)
+                {
+                    <img src="~/fotos/@item.UrlFoto" class="img-thumbnail" width="130px " />
+                }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
+                @Html.DisplayFor(modelItem => item.Precio)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Stock)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ProductoId">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.ProductoId">Detalles</a> |

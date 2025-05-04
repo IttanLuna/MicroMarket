@@ -24,11 +24,11 @@ namespace MicroMarket.Models
         [Precision(10, 2)]
         public decimal Total { get; set; }
 
+        public int ClienteId { get; set; }
+        public Cliente? Cliente { get; set; }
+
         //Relaciones
 
-        public int ClienteId { get; set; }
-        public int TelevisorId { get; set; }
-        public Cliente? Cliente { get; set; }
-        public Producto? Producto { get; set; }
+        public ICollection<Venta> Detalles { get; set; } = new List<Venta>();
     }
 }

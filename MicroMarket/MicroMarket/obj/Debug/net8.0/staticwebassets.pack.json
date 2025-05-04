@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\MicroMarket.t22pcc5cpm.bundle.scp.css"
     },
     {
+      "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\Fondo\\micromarket-con-pago-automatico.jpg",
+      "PackagePath": "staticwebassets\\Fondo\\micromarket-con-pago-automatico.jpg"
+    },
+    {
+      "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\BarraNavegacion.css",
+      "PackagePath": "staticwebassets\\css\\BarraNavegacion.css"
+    },
+    {
+      "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\InicioSesion.css",
+      "PackagePath": "staticwebassets\\css\\InicioSesion.css"
+    },
+    {
       "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\1.png",
+      "PackagePath": "staticwebassets\\fotos\\1.png"
+    },
+    {
+      "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\2.webp",
+      "PackagePath": "staticwebassets\\fotos\\2.webp"
     },
     {
       "Id": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\js\\site.js",

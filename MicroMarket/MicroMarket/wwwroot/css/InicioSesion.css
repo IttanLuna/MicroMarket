@@ -1,0 +1,26 @@
+﻿body {
+    background-color: #F5F5F5; /* Light gray background */
+    font-family: 'Merriweather', serif;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-xiaomi {
+    background-color: #FF6900;
+    color: #FFFFFF;
+    border: none;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+    .btn-xiaomi:hover {
+        background-color: #E55A00;
+    }
+
+.text-xiaomi {
+    color: #FF6900;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0HCXr66XUy9DAJW0GmajPy+BzTJuAQjDDfdSgvhGk5c=",
+  "Hash": "hfATVtYk99dOvWOFbZIXV360h9GrSK4RaRie7P1dTzg=",
   "Source": "MicroMarket",
   "BasePath": "_content/MicroMarket",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MicroMarket.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\BarraNavegacion.css",
+      "SourceId": "MicroMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\",
+      "BasePath": "_content/MicroMarket",
+      "RelativePath": "css/BarraNavegacion#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9uk6rw50tn",
+      "Integrity": "/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\BarraNavegacion.css"
+    },
+    {
+      "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\InicioSesion.css",
+      "SourceId": "MicroMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\",
+      "BasePath": "_content/MicroMarket",
+      "RelativePath": "css/InicioSesion#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "245o8wpohk",
+      "Integrity": "4kcCQCz1yA8gx/82m3jfcOEKBfD0TYBiYzLUtuRfKns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\InicioSesion.css"
+    },
+    {
       "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\site.css",
       "SourceId": "MicroMarket",
       "SourceType": "Discovered",
@@ -99,6 +141,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\Fondo\\micromarket-con-pago-automatico.jpg",
+      "SourceId": "MicroMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\",
+      "BasePath": "_content/MicroMarket",
+      "RelativePath": "Fondo/micromarket-con-pago-automatico#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "429dim6yck",
+      "Integrity": "HLn7ojV7o4UZjhoKt8MFnmqt7M3TUQUP4JSTyMivdsU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Fondo\\micromarket-con-pago-automatico.jpg"
+    },
+    {
+      "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\1.png",
+      "SourceId": "MicroMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\",
+      "BasePath": "_content/MicroMarket",
+      "RelativePath": "fotos/1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "79j2o1rv92",
+      "Integrity": "BQa7a1U71N+g2qwJFT+RIveVy25vD+yWuIKkq/Q//2k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fotos\\1.png"
+    },
+    {
+      "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\2.webp",
+      "SourceId": "MicroMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\",
+      "BasePath": "_content/MicroMarket",
+      "RelativePath": "fotos/2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "itzyag978q",
+      "Integrity": "KjzBkXT6SQCO4XkNefzw3wvJaR5Tw5sUb859NRPOxyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fotos\\2.webp"
     },
     {
       "Identity": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\js\\site.js",
@@ -1321,6 +1426,170 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/BarraNavegacion.9uk6rw50tn.css",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\BarraNavegacion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 03:35:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9uk6rw50tn"
+        },
+        {
+          "Name": "label",
+          "Value": "css/BarraNavegacion.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s="
+        }
+      ]
+    },
+    {
+      "Route": "css/BarraNavegacion.css",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\BarraNavegacion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 03:35:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s="
+        }
+      ]
+    },
+    {
+      "Route": "css/InicioSesion.245o8wpohk.css",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\InicioSesion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4kcCQCz1yA8gx/82m3jfcOEKBfD0TYBiYzLUtuRfKns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 22:16:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "245o8wpohk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/InicioSesion.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4kcCQCz1yA8gx/82m3jfcOEKBfD0TYBiYzLUtuRfKns="
+        }
+      ]
+    },
+    {
+      "Route": "css/InicioSesion.css",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\InicioSesion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4kcCQCz1yA8gx/82m3jfcOEKBfD0TYBiYzLUtuRfKns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 22:16:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4kcCQCz1yA8gx/82m3jfcOEKBfD0TYBiYzLUtuRfKns="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1343,7 +1612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sat, 03 May 2025 21:43:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1388,7 +1657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sat, 03 May 2025 21:43:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1481,6 +1750,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "Fondo/micromarket-con-pago-automatico.429dim6yck.jpg",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\Fondo\\micromarket-con-pago-automatico.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "192511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HLn7ojV7o4UZjhoKt8MFnmqt7M3TUQUP4JSTyMivdsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 22:42:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "429dim6yck"
+        },
+        {
+          "Name": "label",
+          "Value": "Fondo/micromarket-con-pago-automatico.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HLn7ojV7o4UZjhoKt8MFnmqt7M3TUQUP4JSTyMivdsU="
+        }
+      ]
+    },
+    {
+      "Route": "Fondo/micromarket-con-pago-automatico.jpg",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\Fondo\\micromarket-con-pago-automatico.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "192511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HLn7ojV7o4UZjhoKt8MFnmqt7M3TUQUP4JSTyMivdsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 22:42:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HLn7ojV7o4UZjhoKt8MFnmqt7M3TUQUP4JSTyMivdsU="
+        }
+      ]
+    },
+    {
+      "Route": "fotos/1.79j2o1rv92.png",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BQa7a1U71N+g2qwJFT+RIveVy25vD+yWuIKkq/Q//2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 02:55:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "79j2o1rv92"
+        },
+        {
+          "Name": "label",
+          "Value": "fotos/1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BQa7a1U71N+g2qwJFT+RIveVy25vD+yWuIKkq/Q//2k="
+        }
+      ]
+    },
+    {
+      "Route": "fotos/1.png",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BQa7a1U71N+g2qwJFT+RIveVy25vD+yWuIKkq/Q//2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 02:55:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BQa7a1U71N+g2qwJFT+RIveVy25vD+yWuIKkq/Q//2k="
+        }
+      ]
+    },
+    {
+      "Route": "fotos/2.itzyag978q.webp",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KjzBkXT6SQCO4XkNefzw3wvJaR5Tw5sUb859NRPOxyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 03:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "itzyag978q"
+        },
+        {
+          "Name": "label",
+          "Value": "fotos/2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KjzBkXT6SQCO4XkNefzw3wvJaR5Tw5sUb859NRPOxyE="
+        }
+      ]
+    },
+    {
+      "Route": "fotos/2.webp",
+      "AssetFile": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\wwwroot\\fotos\\2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KjzBkXT6SQCO4XkNefzw3wvJaR5Tw5sUb859NRPOxyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 03:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KjzBkXT6SQCO4XkNefzw3wvJaR5Tw5sUb859NRPOxyE="
         }
       ]
     },
@@ -6263,7 +6778,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sun, 04 May 2025 02:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +6815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sun, 04 May 2025 02:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6337,7 +6852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sun, 04 May 2025 02:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6382,7 +6897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 23:30:46 GMT"
+          "Value": "Sun, 04 May 2025 02:26:30 GMT"
         },
         {
           "Name": "Cache-Control",

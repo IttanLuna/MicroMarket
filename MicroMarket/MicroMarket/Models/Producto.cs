@@ -26,6 +26,6 @@ namespace MicroMarket.Models
 
 
         // Relación uno a muchos con Ventas
-        public ICollection<Venta>? Ventas { get; set; }
+        public ICollection<Venta> DetallesVentas { get; set; } = new List<Venta>();
     }
 }

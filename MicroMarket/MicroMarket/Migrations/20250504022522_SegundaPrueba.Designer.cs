@@ -3,6 +3,7 @@ using System;
 using MicroMarket.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MicroMarket.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20250504022522_SegundaPrueba")]
+    partial class SegundaPrueba
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
@@ -169,14 +172,14 @@ namespace MicroMarket.Migrations
                     b.Property<int?>("ProductoId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("TelevisorId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<decimal>("Total")
                         .HasPrecision(10, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("VendedorId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("VentaId1")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("VentaId");
@@ -186,8 +189,6 @@ namespace MicroMarket.Migrations
                     b.HasIndex("ProductoId");
 
                     b.HasIndex("VendedorId");
-
-                    b.HasIndex("VentaId1");
 
                     b.ToTable("Ventas");
                 });
@@ -207,19 +208,17 @@ namespace MicroMarket.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MicroMarket.Models.Producto", null)
-                        .WithMany("DetallesVentas")
+                    b.HasOne("MicroMarket.Models.Producto", "Producto")
+                        .WithMany("Ventas")
                         .HasForeignKey("ProductoId");
 
                     b.HasOne("MicroMarket.Models.Vendedor", null)
                         .WithMany("Ventas")
                         .HasForeignKey("VendedorId");
 
-                    b.HasOne("MicroMarket.Models.Venta", null)
-                        .WithMany("Detalles")
-                        .HasForeignKey("VentaId1");
-
                     b.Navigation("Cliente");
+
+                    b.Navigation("Producto");
                 });
 
             modelBuilder.Entity("MicroMarket.Models.Cliente", b =>
@@ -229,7 +228,7 @@ namespace MicroMarket.Migrations
 
             modelBuilder.Entity("MicroMarket.Models.Producto", b =>
                 {
-                    b.Navigation("DetallesVentas");
+                    b.Navigation("Ventas");
                 });
 
             modelBuilder.Entity("MicroMarket.Models.Proveedor", b =>
@@ -240,11 +239,6 @@ namespace MicroMarket.Migrations
             modelBuilder.Entity("MicroMarket.Models.Vendedor", b =>
                 {
                     b.Navigation("Ventas");
-                });
-
-            modelBuilder.Entity("MicroMarket.Models.Venta", b =>
-                {
-                    b.Navigation("Detalles");
                 });
 #pragma warning restore 612, 618
         }

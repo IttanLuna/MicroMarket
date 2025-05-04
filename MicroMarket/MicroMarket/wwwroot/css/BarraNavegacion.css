@@ -1,0 +1,114 @@
+﻿/* Fondo naranja personalizado */
+.bg-orange {
+    background-color: red !important;
+}
+
+/* Asegurarte de que en estado hover sigan blancas */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+
+/* Tipografía formal para todo el sitio */
+body {
+    font-family: 'Merriweather', serif;
+    
+}
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 56px; /* altura de tu navbar */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 56px);
+        background-image: url('/fondo/micromarket-con-pago-automatico.jpg');
+        background-size: cover; /* Ajusta la imagen para cubrir todo */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+h1, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff; /* Blanco puro sobre imágenes */
+    /* Sombra más intensa para resaltar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(0, 0, 0, 0.8);
+    /* Fondo semitransparente detrás del texto */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+}
+
+p {
+    display: block ; /* Bloque: fuerza el salto de línea */
+    margin-bottom: 1rem; /* Espacio tras cada párrafo */
+
+    font-size: 18px;
+    color: #ffffff; /* Blanco legible */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    /* Opcional: si tenías pre-line para respetar saltos internos */
+    white-space: pre-line;
+}
+
+/* Tabla de ancho completo con columnas iguales */
+.table {
+    width: 100%;
+    table-layout: fixed; /* Fuerza columnas proporcionales */
+    border-collapse: separate; /* Necesario para border-spacing */
+    border-spacing: 0.5rem 0.5rem; /* Separación X e Y entre celdas */
+}
+
+    /* Cajón general de cada celda: fondo oscuro semitransparente */
+    .table th,
+    .table td {
+        width: 20%;
+        background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+        color: #ffffff; /* Texto blanco */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        overflow: hidden; /* Evita desbordes */
+        text-overflow: ellipsis; /* “…” en textos largos */
+        white-space: nowrap; /* Sin saltos de línea */
+        padding: 0.75rem 0.5rem;
+        border-radius: 4px;
+    }
+
+    /* Separación suave entre filas (se ve como “hueco” sin líneas) */
+    .table tbody tr {
+        background: none; /* ya que cada td tiene su propio fondo */
+    }
+
+    /* Ajuste específico de la imagen en la primera columna */
+    .table td img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Centrar el contenido de la última columna de acciones */
+    .table td:last-child,
+    .table th:last-child {
+        text-align: center;
+    }
+
+    /* Para respetar saltos de línea internos si los necesitas */
+    .table th,
+    .table td {
+        white-space: pre-line; /* o pre-wrap si quieres respetar espacios */
+    }
+
+footer{
+    background-color: white;
+}     
+
+/* Opcional: aún más contraste en la barra de navegación */
+.navbar-brand,
+.navbar-nav .nav-link {
+    font-weight: 700; /* negrita para destacar */
+}
