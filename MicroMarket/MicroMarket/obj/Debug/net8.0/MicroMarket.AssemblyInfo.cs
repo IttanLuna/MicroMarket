@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroMarket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+698987940dd811c8b4c796402357d02668732387")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69a302d45a2bd2bc5d1e5b58fd554330a09b3731")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroMarket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroMarket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {}
   },
   "projects": {
-    "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {
+    "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
         "projectName": "MicroMarket",
-        "projectPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

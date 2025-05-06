@@ -17,145 +17,145 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MicroMarket
 build_property.RootNamespace = MicroMarket
-build_property.ProjectDir = D:\Clases\MicroMarket\MicroMarket\MicroMarket\
+build_property.ProjectDir = C:\Users\HP\Desktop\Proyecto de Diseño\CODIGO\MicroMarket\MicroMarket\MicroMarket\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Clases\MicroMarket\MicroMarket\MicroMarket
+build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Proyecto de Diseño\CODIGO\MicroMarket\MicroMarket\MicroMarket
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Create.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Delete.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Details.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Edit.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Home/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Home/Privacy.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Login/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Create.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Delete.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Details.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Edit.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Productoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Create.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Delete.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Details.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Edit.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Proveedors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Shared/Error.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Create.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Delete.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Details.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Edit.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Vendedors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Create.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Delete.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Details.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Edit.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Index.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Ventas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/_ViewImports.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/_ViewStart.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Clases/MicroMarket/MicroMarket/MicroMarket/Views/Shared/_Layout.cshtml]
+[C:/Users/HP/Desktop/Proyecto de Diseño/CODIGO/MicroMarket/MicroMarket/MicroMarket/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dm1utyk7om

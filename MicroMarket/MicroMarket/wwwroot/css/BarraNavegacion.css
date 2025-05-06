@@ -1,89 +1,105 @@
-﻿/* Fondo naranja personalizado */
+﻿/* ======= COLORES Y FUENTES ======= */
+
+/* Fondo naranja moderno */
 .bg-orange {
-    background-color: red !important;
+    background-color: #fd7e14 !important;
 }
 
-/* Asegurarte de que en estado hover sigan blancas */
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-brand:hover {
-    color: #ffffff !important;
-}
-
-
-/* Tipografía formal para todo el sitio */
+/* Fuente general elegante */
 body {
     font-family: 'Merriweather', serif;
-    
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+    /* Imagen de fondo */
     body::before {
         content: "";
         position: fixed;
-        top: 56px; /* altura de tu navbar */
+        top: 56px;
         left: 0;
         width: 100%;
         height: calc(100vh - 56px);
         background-image: url('/fondo/micromarket-con-pago-automatico.jpg');
-        background-size: cover; /* Ajusta la imagen para cubrir todo */
-        background-position: center; /* Centra la imagen */
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
+        opacity: 0.25;
         z-index: -1;
+        pointer-events: none;
     }
+
+/* ======= NAVBAR ======= */
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    font-weight: 700;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+/* ======= TEXTOS ======= */
 
 h1, h4 {
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff; /* Blanco puro sobre imágenes */
-    /* Sombra más intensa para resaltar */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(0, 0, 0, 0.8);
-    /* Fondo semitransparente detrás del texto */
-    display: inline-block;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 0.5em;
 }
 
 p {
-    display: block ; /* Bloque: fuerza el salto de línea */
-    margin-bottom: 1rem; /* Espacio tras cada párrafo */
-
     font-size: 18px;
-    color: #ffffff; /* Blanco legible */
+    color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0.15em 0.4em;
-    border-radius: 3px;
-    /* Opcional: si tenías pre-line para respetar saltos internos */
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
     white-space: pre-line;
+    margin-bottom: 1rem;
 }
 
-/* Tabla de ancho completo con columnas iguales */
+/* ======= TABLAS ======= */
+
 .table {
     width: 100%;
-    table-layout: fixed; /* Fuerza columnas proporcionales */
-    border-collapse: separate; /* Necesario para border-spacing */
-    border-spacing: 0.5rem 0.5rem; /* Separación X e Y entre celdas */
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
 }
 
-    /* Cajón general de cada celda: fondo oscuro semitransparente */
     .table th,
     .table td {
         width: 20%;
-        background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
-        color: #ffffff; /* Texto blanco */
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-        overflow: hidden; /* Evita desbordes */
-        text-overflow: ellipsis; /* “…” en textos largos */
-        white-space: nowrap; /* Sin saltos de línea */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-line;
         padding: 0.75rem 0.5rem;
         border-radius: 4px;
+        vertical-align: middle;
     }
 
-    /* Separación suave entre filas (se ve como “hueco” sin líneas) */
     .table tbody tr {
-        background: none; /* ya que cada td tiene su propio fondo */
+        background: none;
     }
 
-    /* Ajuste específico de la imagen en la primera columna */
     .table td img {
         max-width: 100%;
         height: auto;
@@ -91,24 +107,131 @@ p {
         margin: 0 auto;
     }
 
-    /* Centrar el contenido de la última columna de acciones */
     .table td:last-child,
     .table th:last-child {
         text-align: center;
     }
 
-    /* Para respetar saltos de línea internos si los necesitas */
-    .table th,
-    .table td {
-        white-space: pre-line; /* o pre-wrap si quieres respetar espacios */
+/* ======= FOOTER ======= */
+
+footer {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+/* ======= RESPONSIVE ======= */
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
     }
 
-footer{
-    background-color: white;
-}     
+    .table th, .table td {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
 
-/* Opcional: aún más contraste en la barra de navegación */
+    h1, h4, p {
+        font-size: 90%;
+    }
+}
+
+/* ======= MODO OSCURO ======= */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+        body::before {
+            opacity: 0.15;
+        }
+
+    .navbar-dark {
+        background-color: #333 !important;
+    }
+
+    h1, h4, p {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    }
+
+    .table th,
+    .table td {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #f8f9fa;
+    }
+
+    footer {
+        background-color: #1c1c1c;
+        color: #aaa;
+        border-top-color: #444;
+    }
+}
+/* ======= ANIMACIONES GLOBALES ======= */
+
+/* Suaviza las transiciones en todos los elementos */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ======= NAVBAR ANIMADA ======= */
+
 .navbar-brand,
 .navbar-nav .nav-link {
-    font-weight: 700; /* negrita para destacar */
+    font-weight: 700;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+    /* Línea inferior animada en hover */
+    .navbar-nav .nav-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffffff;
+        transition: width 0.3s;
+        margin: 0 auto;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
+    color: #ffc107 !important; /* dorado elegante */
+    text-decoration: none;
+}
+
+/* ======= BOTONES ======= */
+
+/* Estilo base para botones Bootstrap */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    /* Efecto sutil al pasar el mouse */
+    .btn:hover {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+
+/* ======= OTROS ELEMENTOS QUE HEREDAN TRANSICIÓN ======= */
+
+.table th,
+.table td,
+h1, h4,
+p {
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
 }

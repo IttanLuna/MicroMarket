@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9uk6rw50tn</Fingerprint>
-      <Integrity>/4WusgWhvsnVmQ2sKkoouxQBM/L7J2XW5CW4Tg7+n6s=</Integrity>
+      <Fingerprint>tnxa2japev</Fingerprint>
+      <Integrity>6Raa0IhZ0DNrKpWeUwe16pSlFuieBKEkXhoMrdn19dU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\BarraNavegacion.css'))</OriginalItemSpec>
