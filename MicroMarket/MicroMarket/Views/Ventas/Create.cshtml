@@ -12,51 +12,45 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NroVenta" class="control-label"></label>
-                <input asp-for="NroVenta" class="form-control" />
-                <span asp-validation-for="NroVenta" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="FechaVenta" class="control-label"></label>
-                <input asp-for="FechaVenta" class="form-control" />
+                <input asp-for="FechaVenta" type="date" class="form-control" />
                 <span asp-validation-for="FechaVenta" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Mes" class="control-label"></label>
-                <input asp-for="Mes" class="form-control" />
-                <span asp-validation-for="Mes" class="text-danger"></span>
+                <label asp-for="ProductoId" class="control-label">Producto</label>
+                <select asp-for="ProductoId" class="form-control" asp-items="ViewBag.ProductoId" id="ProductoId">
+                    <option value="">Seleccione un producto</option>
+                </select>
+                <span asp-validation-for="ProductoId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Anio" class="control-label"></label>
-                <input asp-for="Anio" class="form-control" />
-                <span asp-validation-for="Anio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Detalle" class="control-label"></label>
-                <input asp-for="Detalle" class="form-control" />
-                <span asp-validation-for="Detalle" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
-                <input asp-for="Cantidad" class="form-control" />
-                <span asp-validation-for="Cantidad" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="PrecioUnidad" class="control-label"></label>
-                <input asp-for="PrecioUnidad" class="form-control" />
+                <input asp-for="PrecioUnidad" class="form-control" id="PrecioUnidad" readonly />
                 <span asp-validation-for="PrecioUnidad" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="Cantidad" class="control-label"></label>
+                <input asp-for="Cantidad" class="form-control" id="Cantidad" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="Total" class="control-label"></label>
-                <input asp-for="Total" class="form-control" />
+                <input asp-for="Total" class="form-control" id="Total" readonly />
                 <span asp-validation-for="Total" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="ClienteId" class="control-label"></label>
-                <select asp-for="ClienteId" class ="form-control" asp-items="ViewBag.ClienteId"></select>
+                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+                <span asp-validation-for="ClienteId" class="text-danger"></span>
             </div>
-            
+
             <div class="form-group">
                 <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
@@ -70,4 +64,36 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        // Diccionario de precios enviado desde el backend
+        const precios = @Html.Raw(Json.Serialize(ViewBag.PreciosProductos));
+
+        // Obtener elementos del DOM
+        const productoSelect = document.getElementById('ProductoId');
+        const precioUnidadInput = document.getElementById('PrecioUnidad');
+        const cantidadInput = document.getElementById('Cantidad');
+        const totalInput = document.getElementById('Total');
+
+        // Función para actualizar el total
+        function actualizarTotal() {
+            const cantidad = parseFloat(cantidadInput.value) || 0;
+            const precio = parseFloat(precioUnidadInput.value) || 0;
+            const total = cantidad * precio;
+            totalInput.value = total.toFixed(2);
+        }
+
+        // Escuchar cambios en Cantidad y PrecioUnidad
+        cantidadInput.addEventListener('input', actualizarTotal);
+        precioUnidadInput.addEventListener('input', actualizarTotal);
+
+        // Escuchar cambio de producto y actualizar precio
+        productoSelect.addEventListener('change', function () {
+            const productoId = parseInt(this.value);
+            const precio = precios[productoId] || 0;
+            precioUnidadInput.value = precio.toFixed(2);
+            actualizarTotal();
+        });
+    </script>
 }
+

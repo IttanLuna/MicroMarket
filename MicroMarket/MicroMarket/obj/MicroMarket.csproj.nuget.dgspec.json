@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {}
+    "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {
+    "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+        "projectUniqueName": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
         "projectName": "MicroMarket",
-        "projectPath": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\Proyecto de Diseño\\CODIGO\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\",
+        "projectPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\MicroMarket.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,27 +44,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
             }
@@ -89,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MicroMarket.Models
 {
@@ -22,8 +23,7 @@ namespace MicroMarket.Models
         public IFormFile? FotoFile { get; set; }
 
         [NotMapped]
-        public string? Info { get { return $"{Precio}"; } }
-
+        public string? Info { get { return $"{Descripcion}"; } }
 
         // Relación uno a muchos con Ventas
         public ICollection<Venta> DetallesVentas { get; set; } = new List<Venta>();

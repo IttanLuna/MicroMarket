@@ -1,72 +1,104 @@
 ﻿@model MicroMarket.Models.Venta
 
 @{
-    ViewData["Title"] = "Details";
+    Layout = null;
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Recibo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/print.css" rel="stylesheet" />
+    <script src="~/js/qr.min.js"></script>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 10px;
+            width: 80mm;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: left;
+        }
 
-<h1>Detalles</h1>
+        h1, h4 {
+            text-align: center;
+            margin: 0;
+            padding: 2px 0;
+        }
 
-<div>
-    <h4>Venta</h4>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        th, td {
+            border-bottom: 1px dashed #000;
+            padding: 4px 0;
+            text-align: left;
+        }
+
+        #qrcode {
+            margin: 10px auto 0;
+            width: 80px;
+            height: 80px;
+        }
+
+        .section {
+            margin: 5px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body onload="window.print();" onafterprint="history.back();">
+
+    <h1>RECIBO</h1>
+    <h4>Nro: @Html.DisplayFor(model => model.NroVenta)</h4>
+
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NroVenta)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NroVenta)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaVenta)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaVenta)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Mes)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Mes)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Anio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Anio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Detalle)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Detalle)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cantidad)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cantidad)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PrecioUnidad)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PrecioUnidad)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Total)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Total)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cliente)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cliente.Direccion)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.VentaId">Editar</a> |
-    <a asp-action="Index">Volver</a>
-</div>
+
+    <div class="section">
+        <strong>Cliente:</strong> @Html.DisplayFor(model => model.Cliente!.Info) <br />
+        <strong>Fecha:</strong> @Html.DisplayFor(model => model.FechaVenta)
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cant</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.Producto!.Info)</td>
+                <td>@Html.DisplayFor(model => model.Cantidad)</td>
+                <td>@Html.DisplayFor(model => model.Total)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="qrcode"></div>
+
+    @{
+        string codigoQR = $"Venta: {Model.NroVenta} | Cliente: {Model.Cliente?.Info} | Fecha: {Model.FechaVenta:dd/MM/yyyy} | Producto: {Model.Producto?.Info} | Cantidad: {Model.Cantidad} | Total: {Model.Total:C}";
+    }
+
+    <script>
+        var qrcode = new QRCode("qrcode", {
+            text: "@codigoQR",
+            width: 80,
+            height: 80
+        });
+    </script>
+
+</body>
+</html>

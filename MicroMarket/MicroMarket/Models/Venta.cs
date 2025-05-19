@@ -11,21 +11,23 @@ namespace MicroMarket.Models
         public int NroVenta { get; set; }
         [Column(TypeName = "date")]
         [Required]
+
+        [Display(Name = "Fecha Venta")]
         public DateOnly FechaVenta { get; set; }
         [Required]
-        public int Mes { get; set; }
-        [Required]
-        public int Anio { get; set; }
-        [Required]
-        public string? Detalle { get; set; }
         public int Cantidad { get; set; }
         [Precision(10, 2)]
+
+        [Display(Name = "Precio Unidad")]
         public decimal PrecioUnidad { get; set; }
         [Precision(10, 2)]
         public decimal Total { get; set; }
 
         public int ClienteId { get; set; }
         public Cliente? Cliente { get; set; }
+
+        public int ProductoId { get; set; }
+        public Producto? Producto { get; set; }
 
         //Relaciones
 

@@ -20,11 +20,30 @@ namespace MicroMarket.Controllers
         }
 
         // GET: Ventas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var myContext = _context.Ventas.Include(v => v.Cliente);
-            return View(await myContext.ToListAsync());
+            // Prepara la consulta base, incluyendo al cliente
+            var ventas = _context.Ventas
+                                 .Include(v => v.Cliente)
+                                 .Include(v => v.Producto)
+                                 .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                ventas = ventas.Where(v =>
+                    // Filtrar por número de venta (convertido a texto)
+                    v.NroVenta.ToString().Contains(searchString) ||
+                    // Filtrar por nombre de cliente usando LIKE en SQL
+                    EF.Functions.Like(v.Cliente.Nombre, $"%{searchString}%")
+                );
+            }
+
+            // Ejecuta la consulta
+            var listaFiltrada = await ventas.ToListAsync();
+            return View(listaFiltrada);
         }
+
+
 
         // GET: Ventas/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -36,6 +55,7 @@ namespace MicroMarket.Controllers
 
             var venta = await _context.Ventas
                 .Include(v => v.Cliente)
+                .Include(v => v.Producto)
                 .FirstOrDefaultAsync(m => m.VentaId == id);
             if (venta == null)
             {
@@ -48,7 +68,14 @@ namespace MicroMarket.Controllers
         // GET: Ventas/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Direccion");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info");
+            ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info");
+
+            // Enviar precios al frontend
+            var productosConPrecios = _context.Productos
+                .Select(p => new { p.ProductoId, p.Precio })
+                .ToDictionary(p => p.ProductoId, p => p.Precio);
+            ViewBag.PreciosProductos = productosConPrecios;
             return View();
         }
 
@@ -57,17 +84,48 @@ namespace MicroMarket.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("VentaId,NroVenta,FechaVenta,Mes,Anio,Detalle,Cantidad,PrecioUnidad,Total,ClienteId,TelevisorId")] Venta venta)
+        public async Task<IActionResult> Create([Bind("VentaId,FechaVenta,ProductoId,Cantidad,PrecioUnidad,Total,ClienteId")] Venta venta)
         {
             if (ModelState.IsValid)
             {
+                // Obtener número automático
+                venta.NroVenta = GetNumero();
+
+                // Buscar producto
+                var producto = await _context.Productos.FindAsync(venta.ProductoId);
+
+                if (producto == null)
+                {
+                    ModelState.AddModelError("", "Producto no encontrado.");
+                    return View(venta);
+                }
+
+                // Verificar stock
+                if (producto.Stock < venta.Cantidad)
+                {
+                    ModelState.AddModelError("", "Stock insuficiente.");
+                    ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
+                    ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
+                    return View(venta);
+                }
+
+                // Descontar stock
+                producto.Stock -= venta.Cantidad;
+                _context.Update(producto);
+
+                // Guardar venta
                 _context.Add(venta);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Direccion", venta.ClienteId);
+
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
+            ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
             return View(venta);
         }
+
+
 
         // GET: Ventas/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -120,6 +178,13 @@ namespace MicroMarket.Controllers
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Direccion", venta.ClienteId);
             return View(venta);
+        }
+
+        private int GetNumero()
+        {
+            if (_context.Ventas.ToList().Count > 0)
+                return _context.Ventas.Max(i => i.NroVenta + 1);
+            return 1;
         }
 
         // GET: Ventas/Delete/5

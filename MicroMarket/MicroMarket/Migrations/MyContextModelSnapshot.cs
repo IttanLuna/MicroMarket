@@ -15,7 +15,7 @@ namespace MicroMarket.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
             modelBuilder.Entity("MicroMarket.Models.Cliente", b =>
                 {
@@ -140,24 +140,14 @@ namespace MicroMarket.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Anio")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("Cantidad")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("ClienteId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Detalle")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<DateOnly>("FechaVenta")
                         .HasColumnType("date");
-
-                    b.Property<int>("Mes")
-                        .HasColumnType("INTEGER");
 
                     b.Property<int>("NroVenta")
                         .HasColumnType("INTEGER");
@@ -166,7 +156,7 @@ namespace MicroMarket.Migrations
                         .HasPrecision(10, 2)
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("ProductoId")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Total")
@@ -207,9 +197,11 @@ namespace MicroMarket.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MicroMarket.Models.Producto", null)
+                    b.HasOne("MicroMarket.Models.Producto", "Producto")
                         .WithMany("DetallesVentas")
-                        .HasForeignKey("ProductoId");
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("MicroMarket.Models.Vendedor", null)
                         .WithMany("Ventas")
@@ -220,6 +212,8 @@ namespace MicroMarket.Migrations
                         .HasForeignKey("VentaId1");
 
                     b.Navigation("Cliente");
+
+                    b.Navigation("Producto");
                 });
 
             modelBuilder.Entity("MicroMarket.Models.Cliente", b =>
