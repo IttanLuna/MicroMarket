@@ -140,7 +140,7 @@ namespace MicroMarket.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Direccion", venta.ClienteId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
             return View(venta);
         }
 

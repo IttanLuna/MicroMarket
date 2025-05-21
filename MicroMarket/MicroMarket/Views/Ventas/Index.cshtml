@@ -1,28 +1,28 @@
 ﻿@model IEnumerable<MicroMarket.Models.Venta>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ventas";
 }
 
-<h1>Index</h1>
+<h1 class="display-4 text-success mb-4">Ventas Registradas</h1>
 
-<p>
-    <a asp-action="Create">Crear Nuevo</a>
-</p>
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <a asp-action="Create" class="btn btn-success shadow-sm">
+        <i class="bi bi-plus-circle me-1"></i> Crear Nuevo
+    </a>
 
-<form method="get" asp-action="Index">
-    <input 
-        type="text" 
-        name="searchString" 
-        value="@Context.Request.Query["searchString"]" 
-        placeholder="Buscar por nro de venta o nombre de cliente" />
-    <button type="submit">Buscar</button>
-</form>
+    <form method="get" asp-action="Index" class="d-flex" role="search">
+        <input type="text"
+               name="searchString"
+               value="@Context.Request.Query["searchString"]"
+               class="form-control me-2"
+               placeholder="Buscar por nro de venta o nombre del cliente" />
+        <button type="submit" class="btn btn-outline-secondary">Buscar</button>
+    </form>
+</div>
 
-
-
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover table-striped align-middle shadow-sm">
+    <thead class="table-success">
         <tr>
             <th>@Html.DisplayNameFor(model => model.NroVenta)</th>
             <th>@Html.DisplayNameFor(model => model.FechaVenta)</th>
@@ -31,25 +31,26 @@
             <th>@Html.DisplayNameFor(model => model.PrecioUnidad)</th>
             <th>@Html.DisplayNameFor(model => model.Total)</th>
             <th>@Html.DisplayNameFor(model => model.Cliente)</th>
-            <th></th>
+            <th class="text-center">Acciones</th>
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model) {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.NroVenta)</td>
-            <td>@Html.DisplayFor(modelItem => item.FechaVenta)</td>
-            <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
-            <th>@Html.DisplayFor(modelItem => item.Producto!.Info)</th>
-            <td>@Html.DisplayFor(modelItem => item.PrecioUnidad)</td>
-            <td>@Html.DisplayFor(modelItem => item.Total)</td>
-            <td>@Html.DisplayFor(modelItem => item.Cliente.Info)</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.VentaId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.VentaId">Recibo</a> |
-                <a asp-action="Delete" asp-route-id="@item.VentaId">Borrar</a>
-            </td>
-        </tr>
-    }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NroVenta)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaVenta)</td>
+                <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                <td>@Html.DisplayFor(modelItem => item.Producto!.Info)</td>
+                <td>@Html.DisplayFor(modelItem => item.PrecioUnidad)</td>
+                <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                <td>@Html.DisplayFor(modelItem => item.Cliente.Info)</td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.VentaId" class="btn btn-sm btn-warning me-1">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.VentaId" class="btn btn-sm btn-info me-1">Recibo</a>
+                    <a asp-action="Delete" asp-route-id="@item.VentaId" class="btn btn-sm btn-danger">Borrar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
