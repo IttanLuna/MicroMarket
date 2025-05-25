@@ -30,8 +30,7 @@
               "RelativeToolTip": "MicroMarket\\Views\\Ventas\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T03:05:18.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T03:05:18.051Z"
             },
             {
               "$type": "Document",
@@ -39,8 +38,8 @@
               "Title": "VentasController.cs",
               "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "MicroMarket\\Controllers\\VentasController.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs*",
-              "RelativeToolTip": "MicroMarket\\Controllers\\VentasController.cs*",
+              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "MicroMarket\\Controllers\\VentasController.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAcwIcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T03:02:32.925Z",

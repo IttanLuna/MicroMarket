@@ -3,6 +3,7 @@ wwwroot\css\InicioSesion.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Fondo\micromarket-con-pago-automatico.jpg
+wwwroot\fotos\1.png
 wwwroot\fotos\2.jpeg
 wwwroot\fotos\2.webp
 wwwroot\fotos\3.webp
@@ -65,4 +66,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\fotos\1.png
