@@ -11,9 +11,9 @@
     <hr />
     <dl class="row">
         <div class="col-4 col-sm-4">
-            @if(Model.UrlFoto != null)
+            @if (Model.UrlFoto != null)
             {
-                <img src="~/fotos/@Model.UrlFoto " class="img-thumbnail" width="300px "/>
+                <img src="~/fotos/@Model.UrlFoto" class="img-thumbnail" width="300px" />
             }
         </div>
         <div class="col-8 col-sm-8">
@@ -23,22 +23,60 @@
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Precio)
             </dd>
+
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Descripcion)
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Descripcion)
             </dd>
+
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Stock)
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Stock)
             </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StockMinimo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StockMinimo)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StockMaximo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StockMaximo)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TipoProducto)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TipoProducto)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FechaVencimiento)
+            </dt>
+            <dd class="col-sm-10">
+                @if (Model.FechaVencimiento.HasValue)
+                {
+                    @Model.FechaVencimiento.Value.ToString("yyyy-MM-dd")
+                }
+                else
+                {
+                    <em>Sin fecha de vencimiento</em>
+                }
+            </dd>
         </div>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProductoId">Editar</a> |
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Edit" asp-route-id="@Model?.ProductoId" class="btn btn-success shadow-sm">Editar</a> |
+    <a asp-action="Index" class="btn btn-success shadow-sm">Volver</a>
 </div>
+

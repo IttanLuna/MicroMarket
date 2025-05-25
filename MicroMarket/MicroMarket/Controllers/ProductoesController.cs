@@ -14,7 +14,7 @@ namespace MicroMarket.Controllers
     public class ProductoesController : Controller
     {
         private readonly MyContext _context;
-        IWebHostEnvironment _webHostEnvironment;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
         public ProductoesController(MyContext context, IWebHostEnvironment webHostEnvironment)
         {
@@ -23,25 +23,27 @@ namespace MicroMarket.Controllers
         }
 
         // GET: Productoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? tipoProductoBusqueda)
         {
-            return View(await _context.Productos.ToListAsync());
+            var productos = from p in _context.Productos
+                            select p;
+
+            if (!string.IsNullOrEmpty(tipoProductoBusqueda))
+            {
+                productos = productos.Where(p => p.TipoProducto != null &&
+                                                 p.TipoProducto.Contains(tipoProductoBusqueda));
+            }
+
+            return View(await productos.ToListAsync());
         }
 
         // GET: Productoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var producto = await _context.Productos
-                .FirstOrDefaultAsync(m => m.ProductoId == id);
-            if (producto == null)
-            {
-                return NotFound();
-            }
+            var producto = await _context.Productos.FirstOrDefaultAsync(m => m.ProductoId == id);
+            if (producto == null) return NotFound();
 
             return View(producto);
         }
@@ -53,54 +55,55 @@ namespace MicroMarket.Controllers
         }
 
         // POST: Productoes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto,FotoFile")] Producto producto)
+        public async Task<IActionResult> Create([Bind("ProductoId,Precio,Descripcion,Stock,StockMinimo,StockMaximo,TipoProducto,FechaVencimiento,UrlFoto,FotoFile")] Producto producto)
         {
+            // Validaciones personalizadas
+            if (producto.Stock < 0) ModelState.AddModelError("Stock", "El stock no puede ser negativo.");
+            if (producto.StockMinimo < 0) ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser negativo.");
+            if (producto.StockMaximo < 0) ModelState.AddModelError("StockMaximo", "El stock máximo no puede ser negativo.");
+
             if (ModelState.IsValid)
             {
                 _context.Add(producto);
                 await _context.SaveChangesAsync();
+
                 if (producto.FotoFile != null)
                 {
                     await GuardarImagen(producto);
                     _context.Update(producto);
                     await _context.SaveChangesAsync();
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(producto);
         }
 
         // GET: Productoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var producto = await _context.Productos.FindAsync(id);
-            if (producto == null)
-            {
-                return NotFound();
-            }
+            if (producto == null) return NotFound();
+
             return View(producto);
         }
 
         // POST: Productoes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductoId,Precio,Descripcion,Stock,UrlFoto,FotoFile")] Producto producto)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductoId,Precio,Descripcion,Stock,StockMinimo,StockMaximo,TipoProducto,FechaVencimiento,UrlFoto,FotoFile")] Producto producto)
         {
-            if (id != producto.ProductoId)
-            {
-                return NotFound();
-            }
+            if (id != producto.ProductoId) return NotFound();
+
+            // Validaciones personalizadas
+            if (producto.Stock < 0) ModelState.AddModelError("Stock", "El stock no puede ser negativo.");
+            if (producto.StockMinimo < 0) ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser negativo.");
+            if (producto.StockMaximo < 0) ModelState.AddModelError("StockMaximo", "El stock máximo no puede ser negativo.");
 
             if (ModelState.IsValid)
             {
@@ -110,25 +113,23 @@ namespace MicroMarket.Controllers
                     {
                         await GuardarImagen(producto);
                     }
+
                     _context.Update(producto);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductoExists(producto.ProductoId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!ProductoExists(producto.ProductoId)) return NotFound();
+                    else throw;
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(producto);
         }
 
+        
         private async Task GuardarImagen(Producto producto)
         {
             var wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -136,31 +137,21 @@ namespace MicroMarket.Controllers
             var nameFoto = $"{producto.ProductoId}{extension}";
             producto.UrlFoto = nameFoto;
 
-            // Asegura que la carpeta exista
             var uploads = Path.Combine(wwwRootPath, "fotos");
             Directory.CreateDirectory(uploads);
 
             var filePath = Path.Combine(uploads, nameFoto);
-            // Usa using para cerrar el stream automáticamente
             using var stream = new FileStream(filePath, FileMode.Create);
             await producto.FotoFile.CopyToAsync(stream);
         }
 
-
         // GET: Productoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var producto = await _context.Productos
-                .FirstOrDefaultAsync(m => m.ProductoId == id);
-            if (producto == null)
-            {
-                return NotFound();
-            }
+            var producto = await _context.Productos.FirstOrDefaultAsync(m => m.ProductoId == id);
+            if (producto == null) return NotFound();
 
             return View(producto);
         }
@@ -186,3 +177,4 @@ namespace MicroMarket.Controllers
         }
     }
 }
+

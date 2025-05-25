@@ -189,35 +189,54 @@ footer {
     }
 }
 
-/* ======= MODO OSCURO ======= */
+/* ======= MODO OSCURO ACTUALIZADO ======= */
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1b1f21;
-        color: #f0f0f0;
+        color: #ffffff;
     }
 
     h1, h2, h3, h4 {
-        background-color: rgba(0, 109, 91, 0.2);
-        color: #d8f3dc;
+        background-color: #00483f;
+        color: #ffffff;
     }
 
     p {
-        background-color: rgba(255, 255, 255, 0.05);
-        color: #ddd;
-    }
-
-    .table th {
-        background-color: #00483f;
-    }
-
-    .table td {
         background-color: #2a2a2a;
+        color: #f0f0f0;
     }
+
+    .table {
+        background-color: #1f1f1f;
+    }
+
+        .table th {
+            background-color: #006d5b;
+            color: #ffffff;
+        }
+
+        .table td {
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+
+        .table tbody tr:hover {
+            background-color: #2c3a34;
+        }
+
+    .btn {
+        background-color: #008f73;
+        color: #ffffff;
+    }
+
+        .btn:hover {
+            background-color: #00b896;
+        }
 
     footer {
         background-color: #2a2a2a;
-        color: #aaa;
+        color: #cccccc;
     }
 }
 

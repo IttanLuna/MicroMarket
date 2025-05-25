@@ -4,11 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
+
 <h1>Vendedores</h1>
 
-<p>
-    <a asp-action="Create">Crear Nuevo</a>
-</p>
+<a asp-action="Create" class="btn btn-success shadow-sm">
+    <i class="bi bi-plus-circle me-1"></i> Crear Nuevo
+</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -26,6 +28,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rol)
             </th>
             <th></th>
         </tr>
@@ -49,11 +54,15 @@
                 @Html.DisplayFor(modelItem => item.Direccion)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.VendedorId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.VendedorId">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.VendedorId">Borrar</a>
+                @Html.DisplayFor(modelItem => item.Rol)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VendedorId" class="btn btn-sm btn-warning me-1">Editar</a> 
+                <a asp-action="Details" asp-route-id="@item.VendedorId" class="btn btn-sm btn-info me-1">Detalles</a> 
+                <a asp-action="Delete" asp-route-id="@item.VendedorId" class="btn btn-sm btn-danger">Borrar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+

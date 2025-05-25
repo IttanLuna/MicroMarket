@@ -1,26 +1,91 @@
-﻿body {
-    background-color: #F5F5F5; /* Light gray background */
-    font-family: 'Merriweather', serif;
+﻿/* ======= ESTILO LOGIN - COLORES MICRO MARKET ======= */
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    margin: 0;
 }
 
+/* Tarjeta principal */
 .card {
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
+/* Título */
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #006d5b;
+    text-align: center;
+}
+
+/* Etiquetas del formulario */
+.form-group label {
+    font-weight: 600;
+    color: #006d5b;
+}
+
+/* Campos de entrada */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #2d2d2d;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: #006d5b;
+        box-shadow: 0 0 0 0.2rem rgba(0, 109, 91, 0.25);
+        outline: none;
+    }
+
+/* Botón centrado y con color corporativo */
 .btn-xiaomi {
-    background-color: #FF6900;
-    color: #FFFFFF;
+    background-color: #006d5b;
+    color: #ffffff;
     border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1.2rem;
     display: block;
-    margin: 1rem auto 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
     .btn-xiaomi:hover {
-        background-color: #E55A00;
+        background-color: #008f73;
+        transform: translateY(-1px);
     }
 
-.text-xiaomi {
-    color: #FF6900;
+/* Mensaje de error */
+.alert-danger {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #b00020;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
 }

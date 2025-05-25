@@ -3,6 +3,7 @@ using System;
 using MicroMarket.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MicroMarket.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20250524222538_CorrecionProducto")]
+    partial class CorrecionProducto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -137,9 +140,6 @@ namespace MicroMarket.Migrations
 
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("Rol")
-                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Telefono")
                         .IsRequired()

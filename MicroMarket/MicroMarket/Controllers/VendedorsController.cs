@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using MicroMarket.Contexto;
 using MicroMarket.Models;
 
+// Asume que ya agregaste el enum TipoRol en el modelo
+
 namespace MicroMarket.Controllers
 {
     public class VendedorsController : Controller
@@ -28,17 +30,11 @@ namespace MicroMarket.Controllers
         // GET: Vendedors/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var vendedor = await _context.Vendedores
                 .FirstOrDefaultAsync(m => m.VendedorId == id);
-            if (vendedor == null)
-            {
-                return NotFound();
-            }
+            if (vendedor == null) return NotFound();
 
             return View(vendedor);
         }
@@ -46,15 +42,14 @@ namespace MicroMarket.Controllers
         // GET: Vendedors/Create
         public IActionResult Create()
         {
+            ViewData["Roles"] = GetRolesSelectList();
             return View();
         }
 
         // POST: Vendedors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("VendedorId,Nombre,Email,Contraseña,Telefono,Direccion")] Vendedor vendedor)
+        public async Task<IActionResult> Create([Bind("VendedorId,Nombre,Email,Contraseña,Telefono,Direccion,Rol")] Vendedor vendedor)
         {
             if (ModelState.IsValid)
             {
@@ -62,36 +57,29 @@ namespace MicroMarket.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["Roles"] = GetRolesSelectList();
             return View(vendedor);
         }
 
         // GET: Vendedors/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var vendedor = await _context.Vendedores.FindAsync(id);
-            if (vendedor == null)
-            {
-                return NotFound();
-            }
+            if (vendedor == null) return NotFound();
+
+            ViewData["Roles"] = GetRolesSelectList();
             return View(vendedor);
         }
 
         // POST: Vendedors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("VendedorId,Nombre,Email,Contraseña,Telefono,Direccion")] Vendedor vendedor)
+        public async Task<IActionResult> Edit(int id, [Bind("VendedorId,Nombre,Email,Contraseña,Telefono,Direccion,Rol")] Vendedor vendedor)
         {
-            if (id != vendedor.VendedorId)
-            {
-                return NotFound();
-            }
+            if (id != vendedor.VendedorId) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -102,34 +90,24 @@ namespace MicroMarket.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VendedorExists(vendedor.VendedorId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!VendedorExists(vendedor.VendedorId)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["Roles"] = GetRolesSelectList();
             return View(vendedor);
         }
 
         // GET: Vendedors/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var vendedor = await _context.Vendedores
                 .FirstOrDefaultAsync(m => m.VendedorId == id);
-            if (vendedor == null)
-            {
-                return NotFound();
-            }
+            if (vendedor == null) return NotFound();
 
             return View(vendedor);
         }
@@ -152,6 +130,18 @@ namespace MicroMarket.Controllers
         private bool VendedorExists(int id)
         {
             return _context.Vendedores.Any(e => e.VendedorId == id);
+        }
+
+        // Para pasar la lista de roles a la vista
+        private List<SelectListItem> GetRolesSelectList()
+        {
+            return Enum.GetValues(typeof(TipoRol))
+                .Cast<TipoRol>()
+                .Select(r => new SelectListItem
+                {
+                    Value = ((int)r).ToString(),
+                    Text = r.ToString()
+                }).ToList();
         }
     }
 }

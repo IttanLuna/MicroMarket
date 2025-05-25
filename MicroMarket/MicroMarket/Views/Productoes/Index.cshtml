@@ -6,9 +6,21 @@
 
 <h1>Productos</h1>
 
-<p>
-    <a asp-action="Create">Crear Nuevo</a>
-</p>
+
+    <a asp-action="Create" class="btn btn-success shadow-sm">
+    <i class="bi bi-plus-circle me-1"></i> Crear Nuevo
+</a>
+
+
+<form method="get" asp-action="Index" class="d-flex" role="search">
+    <input type="text"
+           name="tipoProductoBusqueda"
+           value="@Context.Request.Query["tipoProductoBusqueda"]"
+           class="form-control me-2"
+           placeholder="Buscar por tipo de producto" />
+    <button type="submit" class="btn btn-outline-secondary">Buscar</button>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -20,9 +32,20 @@
                 @Html.DisplayNameFor(model => model.Stock)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.StockMinimo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StockMaximo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaVencimiento)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Descripcion)
             </th>
-            
             <th></th>
         </tr>
     </thead>
@@ -32,7 +55,7 @@
             <td>
                 @if (item.UrlFoto != null)
                 {
-                    <img src="~/fotos/@item.UrlFoto" class="img-thumbnail" width="130px " />
+                    <img src="~/fotos/@item.UrlFoto" class="img-thumbnail" width="130px" />
                 }
             </td>
             <td>
@@ -42,15 +65,34 @@
                 @Html.DisplayFor(modelItem => item.Stock)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.StockMinimo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StockMaximo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoProducto)
+            </td>
+            <td>
+                @if (item.FechaVencimiento.HasValue)
+                {
+                    @item.FechaVencimiento.Value.ToString("yyyy-MM-dd")
+                }
+                else
+                {
+                    <em>Sin fecha</em>
+                }
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Descripcion)
             </td>
-            
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductoId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductoId">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductoId">Borrar</a>
+                <a asp-action="Edit" asp-route-id="@item.ProductoId" class="btn btn-sm btn-warning me-1">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ProductoId" class="btn btn-sm btn-info me-1">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductoId" class="btn btn-sm btn-danger">Borrar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+

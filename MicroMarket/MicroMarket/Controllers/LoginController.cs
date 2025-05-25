@@ -25,8 +25,11 @@ namespace MicroMarket.Controllers
                 .FirstOrDefault();
             if (vendedor != null)
             {
+                HttpContext.Session.SetInt32("Rol", (int)vendedor.Rol); // Guarda el rol
+                HttpContext.Session.SetString("Nombre", vendedor.Nombre); // (Opcional)
                 return RedirectToAction("Index", "Home");
             }
+
             else
             {
                 //Mandando mensajes a la vista
@@ -38,8 +41,10 @@ namespace MicroMarket.Controllers
 
         public async Task<IActionResult> Logout()
         {
+            HttpContext.Session.Clear(); // Limpia todos los datos de sesión
             return RedirectToAction("Index", "Login");
         }
+
     }
 }
 
