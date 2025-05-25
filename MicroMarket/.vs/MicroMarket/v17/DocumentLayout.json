@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Clases\\MicroMarket\\MicroMarket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|d:\\clases\\micromarket\\micromarket\\micromarket\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56F5F004-804B-45BD-A11A-BE2DDC30DFEA}|MicroMarket\\MicroMarket.csproj|solutionrelative:micromarket\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Vendedor.cs",
-              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
-              "RelativeDocumentMoniker": "MicroMarket\\Models\\Vendedor.cs",
-              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Models\\Vendedor.cs",
-              "RelativeToolTip": "MicroMarket\\Models\\Vendedor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Program.cs",
+              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Program.cs",
+              "RelativeToolTip": "MicroMarket\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T00:43:28.63Z",
+              "WhenOpened": "2025-05-25T02:43:24.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "MicroMarket\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "MicroMarket\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:42:38.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "MicroMarket\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Clases\\MicroMarket\\MicroMarket\\MicroMarket\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "MicroMarket\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T02:42:34.44Z",
               "EditorCaption": ""
             }
           ]
