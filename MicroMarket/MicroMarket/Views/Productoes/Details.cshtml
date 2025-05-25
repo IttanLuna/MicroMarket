@@ -79,4 +79,59 @@
     <a asp-action="Edit" asp-route-id="@Model?.ProductoId" class="btn btn-success shadow-sm">Editar</a> |
     <a asp-action="Index" class="btn btn-success shadow-sm">Volver</a>
 </div>
+<h2>Detalles del Producto</h2>
+
+<!-- Aquí van los detalles existentes -->
+
+<h3>Estadísticas de Ventas por Mes</h3>
+<canvas id="ventasPorMesChart" width="400" height="200"></canvas>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('ventasPorMesChart').getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(ViewBag.VentasPorMesLabels)),
+                datasets: [{
+                    label: 'Cantidad Vendida',
+                    data: @Html.Raw(Json.Serialize(ViewBag.VentasPorMesDatos)),
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    barThickness: 20, //Grosor de la barra
+                    categoryPercentage: 0.6, // Espacio entre las barras
+                    barPercentage: 0.8 // Proporción de la barra dentro del espacio asignado
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: 'white'
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+}
+
+}
+
 

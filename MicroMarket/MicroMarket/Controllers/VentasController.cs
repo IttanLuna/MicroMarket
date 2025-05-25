@@ -100,10 +100,19 @@ namespace MicroMarket.Controllers
                     return View(venta);
                 }
 
-                // Verificar stock
+                // Verificar stock suficiente
                 if (producto.Stock < venta.Cantidad)
                 {
                     ModelState.AddModelError("", "Stock insuficiente.");
+                    ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
+                    ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
+                    return View(venta);
+                }
+
+                // NUEVA VALIDACIÓN: Evitar venta si quedaría por debajo del stock mínimo
+                if ((producto.Stock - venta.Cantidad) < producto.StockMinimo)
+                {
+                    ModelState.AddModelError("", $"No se puede realizar la venta: el stock quedaría por debajo del mínimo permitido ({producto.StockMinimo}).");
                     ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
                     ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
                     return View(venta);
@@ -124,6 +133,19 @@ namespace MicroMarket.Controllers
             ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
             return View(venta);
         }
+
+
+        // Método para evitar repetir código
+        private void CargarListasDesplegables(Venta venta)
+        {
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info", venta.ClienteId);
+            ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info", venta.ProductoId);
+
+            // Enviar precios al JS
+            ViewBag.PreciosProductos = _context.Productos.ToDictionary(p => p.ProductoId, p => p.Precio);
+        }
+
+
 
 
 

@@ -42,11 +42,30 @@ namespace MicroMarket.Controllers
         {
             if (id == null) return NotFound();
 
-            var producto = await _context.Productos.FirstOrDefaultAsync(m => m.ProductoId == id);
+            var producto = await _context.Productos
+                .Include(p => p.DetallesVentas)
+                .FirstOrDefaultAsync(m => m.ProductoId == id);
+
             if (producto == null) return NotFound();
+
+            // Agrupar ventas por mes
+            var ventasPorMes = producto.DetallesVentas
+                .GroupBy(v => new { v.FechaVenta.Year, v.FechaVenta.Month })
+                .Select(g => new
+                {
+                    Mes = $"{g.Key.Month:D2}/{g.Key.Year}",
+                    Total = g.Sum(v => v.Cantidad)
+                })
+                .OrderBy(x => x.Mes)
+                .ToList();
+
+            // Enviar datos a la vista
+            ViewBag.VentasPorMesLabels = ventasPorMes.Select(v => v.Mes).ToArray();
+            ViewBag.VentasPorMesDatos = ventasPorMes.Select(v => v.Total).ToArray();
 
             return View(producto);
         }
+
 
         // GET: Productoes/Create
         public IActionResult Create()
