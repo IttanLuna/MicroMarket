@@ -102,5 +102,21 @@
             actualizarTotal();
         });
     </script>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const fechaInput = document.querySelector('input[name="FechaVenta"]');
+        if (fechaInput && !fechaInput.value) {
+            const hoy = new Date();
+            const year = hoy.getFullYear();
+            const month = String(hoy.getMonth() + 1).padStart(2, '0'); // Mes inicia en 0
+            const day = String(hoy.getDate()).padStart(2, '0');
+            const fechaFormateada = `${year}-${month}-${day}`;
+            fechaInput.value = fechaFormateada;
+        }
+    });
+</script>
+
+
 }
 

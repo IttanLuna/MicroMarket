@@ -11,17 +11,38 @@
         <i class="bi bi-plus-circle me-1"></i> Crear Nuevo
     </a>
 
-    <form method="get" asp-action="Index" class="d-flex" role="search">
-        <input type="text"
-               name="searchString"
-               value="@Context.Request.Query["searchString"]"
-               class="form-control me-2"
-               placeholder="Buscar por nro de venta o nombre del cliente" />
-        <button type="submit" class="btn btn-outline-secondary">Buscar</button>
-    </form>
+    <form method="get" asp-action="Index" class="d-flex gap-2 mb-3" role="search">
+    <input type="text"
+           name="searchString"
+           value="@Context.Request.Query["searchString"]"
+           class="form-control"
+           placeholder="Buscar por nro de venta o nombre del cliente" />
 
+    <input type="date"
+           name="fechaInicio"
+           value="@Context.Request.Query["fechaInicio"]"
+           class="form-control" />
 
-<table class="table table-bordered table-hover table-striped align-middle shadow-sm">
+    <input type="date"
+           name="fechaFin"
+           value="@Context.Request.Query["fechaFin"]"
+           class="form-control" />
+
+    <button type="submit" class="btn btn-outline-secondary">Buscar</button>
+</form>
+
+<button id="btnResumen" class="btn btn-outline-primary mb-3 me-2">
+    <i class="bi bi-bar-chart-line"></i> Ver más y menos vendido del mes
+</button>
+
+<button id="btnVolver" class="btn btn-secondary mb-3 me-2" style="display:none;">
+    ← Volver al listado
+</button>
+
+<div id="resumenVentas" class="mb-4" style="display:none;"></div>
+
+<div id="tablaVentas">
+    <table class="table table-bordered table-hover table-striped align-middle shadow-sm">
     <thead class="table-success">
         <tr>
             <th>@Html.DisplayNameFor(model => model.NroVenta)</th>
@@ -54,3 +75,60 @@
         }
     </tbody>
 </table>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Botón para mostrar el resumen
+            $("#btnResumen").click(function () {
+                $.get("@Url.Action("ObtenerResumenVentas")", function (data) {
+                    // Separar las líneas del texto recibido
+                    const lineas = data.split('\n');
+
+                    let html = '';
+
+                    if (lineas.length >= 2) {
+                        html += `
+                            <div class="alert alert-success">
+                                <strong>${lineas[0]}</strong>
+                            </div>
+                            <div class="alert alert-warning">
+                                <strong>${lineas[1]}</strong>
+                            </div>`;
+                    } else {
+                        // Mostrar solo un mensaje si hay menos líneas (como mensaje de error)
+                        html = `
+                            <div class="alert alert-info">
+                                ${data}
+                            </div>`;
+                    }
+
+                    $("#resumenVentas").html(html).show();
+                    $("#tablaVentas").hide();
+                    $("#btnResumen").hide();
+                    $("#btnVolver").show();
+                });
+            });
+
+            // Botón para volver al listado
+            $("#btnVolver").click(function () {
+                $("#resumenVentas").hide().html('');
+                $("#tablaVentas").show();
+                $("#btnResumen").show();
+                $("#btnVolver").hide();
+            });
+
+            // Si se hace una búsqueda, debe volver a mostrar la tabla
+            $("form[method='get']").submit(function () {
+                $("#resumenVentas").hide().html('');
+                $("#tablaVentas").show();
+                $("#btnResumen").show();
+                $("#btnVolver").hide();
+            });
+        });
+    </script>
+}
+

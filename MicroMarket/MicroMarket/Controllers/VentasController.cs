@@ -20,7 +20,7 @@ namespace MicroMarket.Controllers
         }
 
         // GET: Ventas
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString, DateOnly? fechaInicio, DateOnly? fechaFin)
         {
             // Prepara la consulta base, incluyendo al cliente
             var ventas = _context.Ventas
@@ -36,6 +36,20 @@ namespace MicroMarket.Controllers
                     // Filtrar por nombre de cliente usando LIKE en SQL
                     EF.Functions.Like(v.Cliente.Nombre, $"%{searchString}%")
                 );
+            }
+
+            // Filtro por rango de fechas
+            if (fechaInicio.HasValue && fechaFin.HasValue)
+            {
+                ventas = ventas.Where(v => v.FechaVenta >= fechaInicio && v.FechaVenta <= fechaFin);
+            }
+            else if (fechaInicio.HasValue)
+            {
+                ventas = ventas.Where(v => v.FechaVenta >= fechaInicio);
+            }
+            else if (fechaFin.HasValue)
+            {
+                ventas = ventas.Where(v => v.FechaVenta <= fechaFin);
             }
 
             // Ejecuta la consulta
@@ -68,6 +82,7 @@ namespace MicroMarket.Controllers
         // GET: Ventas/Create
         public IActionResult Create()
         {
+            
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Info");
             ViewData["ProductoId"] = new SelectList(_context.Productos, "ProductoId", "Info");
 
@@ -202,6 +217,54 @@ namespace MicroMarket.Controllers
             return View(venta);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> ObtenerResumenVentas()
+        {
+            var hoy = DateTime.Today;
+            int mes = hoy.Month;
+            int anio = hoy.Year;
+
+            var resumen = await _context.Ventas
+                .Where(v => v.FechaVenta.Month == mes && v.FechaVenta.Year == anio)
+                .GroupBy(v => v.ProductoId)
+                .Select(g => new
+                {
+                    ProductoId = g.Key,
+                    TotalVendidas = g.Sum(v => v.Cantidad)
+                })
+                .OrderByDescending(v => v.TotalVendidas)
+                .ToListAsync();
+
+            if (!resumen.Any())
+            {
+                return Content("No hay ventas registradas este mes.");
+            }
+
+            var productoIds = resumen.Select(r => r.ProductoId).ToList();
+
+            var productos = await _context.Productos
+                .Where(p => productoIds.Contains(p.ProductoId))
+                .ToDictionaryAsync(p => p.ProductoId, p => p.Descripcion);
+
+            var resumenConNombres = resumen.Select(r => new
+            {
+                Nombre = productos.ContainsKey(r.ProductoId) ? productos[r.ProductoId] : "Desconocido",
+                TotalVendidas = r.TotalVendidas
+            }).ToList();
+
+            var masVendido = resumenConNombres.First();
+            var menosVendido = resumenConNombres.Last();
+
+            string resultado = $"Producto más vendido: {masVendido.Nombre} – {masVendido.TotalVendidas} unidades\n" +
+                               $"Producto menos vendido: {menosVendido.Nombre} – {menosVendido.TotalVendidas} unidades";
+
+            return Content(resultado);
+        }
+
+
+
+
+        //Esta función obtiene el próximo número de venta automáticamente
         private int GetNumero()
         {
             if (_context.Ventas.ToList().Count > 0)
